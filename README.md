@@ -3,7 +3,7 @@
 - Run `npm run start` in your terminal to start the server.
 - Your browser will open at `localhost:3000`.
 
-#JavaScript Learning
+# JavaScript Learning
 
 ## Variables
     1) Valid Variable Names
@@ -22,7 +22,7 @@
     Value doesn't change 
     1) Declare a constant and need to initialize during declaration, will get uncaught syntax error if we don't initialize during declaration 
 
-## Var vs Let keyword[./varvslet.js]
+## [Var vs Let keyword](./varvslet.js)
     a) Var:
         1) Variables declared with var keyword are hoisted (initialized with undefined before the code is run) which means they are accessible in their enclosing scope even before they are declared
         function run() {
@@ -39,7 +39,7 @@
             let foo = "Foo";
             console.log(foo); // Foo
         }
-     2) let is blocl scoped
+     2) let is block scoped
     
     
 
