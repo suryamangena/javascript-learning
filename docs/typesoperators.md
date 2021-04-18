@@ -11,7 +11,7 @@
 
 ## String 
     1) Refer to Escape Sequences
-        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
     2) back tickts Character -> Template literals/Strings
     3) String Interpolation -> We can add variable with in string 
     4) We can add the new line character
