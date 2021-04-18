@@ -11,16 +11,27 @@ if (x === 1) {
 console.log(x);
 // expected output: 2
 
+function run() {
+    console.log(foo); // undefined
+    var foo = "Foo";
+    console.log(foo); // Foo
+}
+
 //Let is block scoped
-let x = 1;
+let b = 1;
 
-if (x === 1) {
-  let x = 2;
+if (b === 1) {
+  let b = 2;
 
-  console.log(x);
+  console.log(b);
   // expected output: 2
 }
 
-console.log(x);
+console.log(b);
 // expected output: 1
 
+function checkHoisting() {
+    console.log(foo); // ReferenceError
+    let foo = "Foo";
+    console.log(foo); // Foo
+}

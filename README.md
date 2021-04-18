@@ -40,6 +40,22 @@
             console.log(foo); // Foo
         }
      2) let is block scoped
+
+## JavaScript Types & Operators
+
+### Types
+    1) Numbers
+    2) Strings
+    3) Converting Between Types
+    4) Booleans
+    5) null and undefined 
+    6) Objects and Symbols
+
+    Note: 
+    1) typeof operator returns a string indicating type of unevaludated operand.
+
+
+
     
     
 
