@@ -41,7 +41,7 @@
         }
      2) let is block scoped
 
-## JavaScript Types & Operators
+## [JavaScript Types & Operators](./docs/typesoperators.md)
 
 ### Types
     1) Numbers

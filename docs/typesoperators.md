@@ -19,7 +19,7 @@
         a) Methods -> substring, toUpperCase, toLowerCase
         b) Properties -> length 
 
-## [Converting Strings and Numbers](././typesoperators.js)
+## [Converting Strings and Numbers](./../typesoperators.js)
     1) JavaScript take a number and automatically convert to string as needed 
     2) To convert String to number, we have to use Number object 
     
