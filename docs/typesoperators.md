@@ -15,7 +15,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 2) back tickts Character -> Template literals/Strings
 3) String Interpolation -> We can add variable with in string 
 4) We can add the new line character
-5) String has methods and properties 
+5) String has methods and properties
     a) Methods -> substring, toUpperCase, toLowerCase
     b) Properties -> length 
 
