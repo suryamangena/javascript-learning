@@ -54,7 +54,7 @@
     Note: 
     1) typeof operator returns a string indicating type of unevaludated operand.
 
-## Program Flow
+## [Program Flow](./docs/programflow.md)
 1) if else statements
 2) truthy and fasly expressions
 3) comparing === to == 
