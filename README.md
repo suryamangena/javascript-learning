@@ -70,7 +70,7 @@
 5) Function Scope
 6) Using Functions to Modify Web Pages
 
-## Objects and the DOM
+## [Objects and the DOM](./docs/objectsanddom.md)
 
 
 
