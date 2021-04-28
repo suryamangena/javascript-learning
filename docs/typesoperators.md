@@ -22,7 +22,14 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 ## [Converting Strings and Numbers](./../typesoperators.js)
     1) JavaScript take a number and automatically convert to string as needed 
     2) To convert String to number, we have to use Number object 
-    
+
+## null and undefined
+1) Javascript sets variable to undefined by default when it is not assigned
+2) Programmer sets variable to null to wipe out the value previously assigned -> Best practice 
+
+## [Objects and Symbols](./../typesoperators.js)
+1) Object 
+2) Symbol is the property of the object
     
 
 

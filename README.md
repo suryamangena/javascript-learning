@@ -43,7 +43,7 @@
 
 ## [JavaScript Types & Operators](./docs/typesoperators.md)
 
-### Types
+## Types
     1) Numbers
     2) Strings
     3) Converting Between Types
@@ -53,6 +53,16 @@
 
     Note: 
     1) typeof operator returns a string indicating type of unevaludated operand.
+
+## Program Flow
+1) if else statements
+2) truthy and fasly expressions
+3) comparing === to == 
+4) ternary operator
+5) block scope
+6) loops: for, while, do... while
+
+
 
 
 

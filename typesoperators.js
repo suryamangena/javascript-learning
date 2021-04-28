@@ -16,3 +16,12 @@ let thirdValue = Number.parseFloat("123.12A");
 console.log(thirdValue); // O/p is 123.12, so string should not begin with character for conversion 
 
 
+let person = {
+    firstName: 'John',
+    lastName: 'Adams'
+}
+console.log(typeof person);
+console.log(person.firstName);
+
+
+
