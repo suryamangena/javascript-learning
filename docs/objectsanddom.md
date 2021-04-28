@@ -18,3 +18,35 @@
 ## [Passing Objects to Functions](./../passingobjectstooffunctions.js)
 
 ## [Standard Built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+
+## Document 
+1) Each tag in html is an Element
+    document.getElementById('id');
+2) Using javascript we can apply the styles, using HTMLElement and method style in it can be used for styling. Generally using CSS for styling is good way to do it
+
+## [Detecting Button Clicks](./../home.js)
+```
+const button = document.getElementById('see-review');
+
+button.addEventListener('click', function(){
+    console.log('click');
+})
+```
+
+## [Showing and Hiding DOM Elements](./../home.js)
+```
+const button = document.getElementById('see-review');
+
+button.addEventListener('click', function(){
+    console.log('click');
+    const review = document.getElementById('review');
+    if(review.classList.contains('d-none')){
+        review.classList.remove('d-none');
+        button.textContent='CLOSE REVIEW';
+    }else{
+        review.classList.add('d-none');
+        button.textContent = 'SEE REVIEW';
+    }
+})
+```
+
