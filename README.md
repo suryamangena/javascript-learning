@@ -62,6 +62,19 @@
 5) block scope
 6) loops: for, while, do... while
 
+## [Functions](./docs/functions.md)
+1) Function Basics
+2) Function Expressions
+3) Passing Information to Functions
+4) Function Return values
+5) Function Scope
+6) Using Functions to Modify Web Pages
+
+## Objects and the DOM
+
+
+
+
 
 
 
