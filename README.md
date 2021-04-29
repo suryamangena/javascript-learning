@@ -74,6 +74,8 @@
 
 ## [Arrays](./docs/arrays.md)
 
+## Scope
+
 
 
 
