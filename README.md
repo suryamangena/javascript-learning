@@ -72,6 +72,7 @@
 
 ## [Objects and the DOM](./docs/objectsanddom.md)
 
+## [Arrays](./docs/arrays.md)
 
 
 
