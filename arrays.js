@@ -50,6 +50,26 @@ values3.splice(2,1,'hello');
 console.log(values3);//o/p -> p,q,hello
 
 //Arrays searching 
+//Filter
+const arrayValues = ['a','b','c','d','e','bbb'];
+const filteredValues = arrayValues.filter(function(item){
+    return item > 'b';
+});
+console.log(filteredValues); // o/p is ['c','d','e']
+
+// find an element that staisfy the target criteria
+const found = arrayValues.find(function(item){
+    return item.length>1;
+});
+console.log(found); // o/p is bbb
+
+//forEach method 
+arrayValues.forEach(function(item){
+    console.log(item);
+});
+
+
+
 
 
 
