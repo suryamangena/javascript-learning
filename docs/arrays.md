@@ -35,7 +35,8 @@ The find() method returns the value of the first element in the provided array t
 
 6) [reduce](./../img/array-reduce-method.png) <br/>
     1) The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value <br/>
-    2) ** A function to execute on each element in the array (except for the first, if no initialValue is supplied). ** <br/>
+    2) **A function to execute on each element in the array (except for the first, if no initialValue is supplied)** <br/>
+    3) Below currentIndex, array is optional <br/>
 ```
 For example: 
 const values = [0,1,2,3,4];
@@ -43,7 +44,7 @@ values.reduce(function(accumulator, currentValue, currentIndex, array){
     return accumulator+currentValue;
 })
 ```
-    3) currentIndex, array is optional
+    
 7) forEach vs Map
 
 ## References
