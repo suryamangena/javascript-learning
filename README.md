@@ -74,7 +74,8 @@
 
 ## [Arrays](./docs/arrays.md)
 
-## Scope
+## [Scope and Hoisting](./docs/scopeandhoisting.md)
+
 
 
 
