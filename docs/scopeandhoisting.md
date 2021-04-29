@@ -42,6 +42,7 @@ let productId=123;
 3) Hoisting is not good in case of variables
 
 ## Hoisting functions
+1) Hosting function is fine 
 ```
 showProductId(); // Calling function before declaration, hosting is fine in functions
 
