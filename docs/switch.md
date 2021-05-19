@@ -1,2 +1,2 @@
 ## Switch 
-1) [Switch Definition](./img/switch.png)
+1) [Switch Definition](./../img/switch.png)
