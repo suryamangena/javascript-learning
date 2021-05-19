@@ -76,6 +76,10 @@
 
 ## [Scope and Hoisting](./docs/scopeandhoisting.md)
 
+## JavaScript Syntax and Operators
+
+1) [Switch](./docs/switch.md)
+
 
 
 
