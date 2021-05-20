@@ -1,0 +1,4 @@
+function simpleTryCatch(){
+    let result;
+    
+}
