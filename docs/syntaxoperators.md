@@ -59,6 +59,10 @@ exception object has name and message as properties
 1) [Primitive Data Types](./../img/primitivedatatypes.png)
 2) [Object Data Types](./../img/objectdatatypes.png)
 
+## [Spread Operator](./../img/spreadoperator.png)
+1) Copying Array of objects only copies the pointer of objects not the complete objects
+2) [Program](./../spreadoperator.js)
+
 
 
 
