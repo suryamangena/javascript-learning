@@ -78,6 +78,8 @@
 
 ## [JavaScript Syntax and Operators](./docs/syntaxoperators.md)
 
+## [JavaScript Objects, Prototypes and Classes](./docs/classesobjects.md)
+
 
 
 
