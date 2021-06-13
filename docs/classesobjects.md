@@ -36,3 +36,11 @@
     d) While on Primitive data types, comparison on content not on addresses
 2) Merging Properties
 3) Immutability 
+
+
+### [Objecrt Properties](./../objectproperties.js)
+1) Object properties can be accessed by dot . and bracket[]
+2) bracket used when propertyName is dynamic
+
+### Prototypes and Inheritance
+1) Every function in javascript has prototype

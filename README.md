@@ -80,6 +80,9 @@
 
 ## [JavaScript Objects, Prototypes and Classes](./docs/classesobjects.md)
 
+## [JavaScript Certification Questions](./docs/mta98-382-exam-questions.md)
+
+
 
 
 
