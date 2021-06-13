@@ -4,4 +4,7 @@
 Ans: 12
 
 2) What will be the value of data after the execution of the following code block?
-```data = 'info' + 'learn';
+```
+data = 'info' + 'learn';
+```
+Ans: infolearn
