@@ -7,4 +7,4 @@ Ans: 12
 ```
 data = 'info' + 'learn';
 ```
-   Ans: infolearn
+- Ans: infolearn
