@@ -550,4 +550,31 @@ do{
 
 ## Document Object Model Questions
 
-67. 
+67. The onClick event is fired with the click of any mouse button.
+- Ans: Incorrect
+
+68. The onMouseOut event is fired when the mouse cursor leaves the element while the onMouseOver event is fired when the mouse cursor is over the element.
+- Ans: Correct 
+- https://www.w3schools.com/jsref/event_onmousedown.asp
+
+69. The available keyboard events are: onKeyDown, onKeyPress, onKeyUp, onKeyPush.
+- Ans: Incorrect 
+- https://www.w3schools.com/jsref/event_onkeypress.asp
+
+70. The onChange event is fired...
+- Ans: after the content of an element changes
+```
+Execute a JavaScript when a user changes the selected option of a <select> element:
+<select onchange="myFunction()">
+```
+- https://www.w3schools.com/jsref/event_onchange.asp
+
+71. The onBlur event is fired when...
+- Ans: an element loses its focus
+```
+<input type="text" onfocusout="myFunction()">
+```
+- https://www.w3schools.com/jsref/event_onfocusout.asp
+
+72. 
+
