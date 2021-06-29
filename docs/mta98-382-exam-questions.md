@@ -327,7 +327,7 @@ var mynum = Math.abs(myres);
 ```
 
 49. Round up the variable numeric.
-- Ans:
+- Ans: 2
 ```
 numeric = 1.1828;
 numeric = Math.ceil(numeric); -> rounds a number up to the next largest integer.
@@ -337,7 +337,7 @@ The Math.round() function returns the value of a number rounded to the nearest i
 ```
 
 50. Round down the variable numeric.
-- Ans:
+- Ans: 1Math.round
 ```
 var numeric = 1.912;
 numeric = Math.floor(numeric);
@@ -345,7 +345,7 @@ The Math.floor() function returns the largest integer less than or equal to a gi
 ```
 
 51. Round the variable numeric to its closest integer value.
-- Ans:
+- Ans: 1
 ```
 var numeric = 1.432;
 numeric = Math.round(numeric);
