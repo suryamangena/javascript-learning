@@ -576,5 +576,457 @@ Execute a JavaScript when a user changes the selected option of a <select> eleme
 ```
 - https://www.w3schools.com/jsref/event_onfocusout.asp
 
-72. 
+72. If in a page there are two elements with the same id myduplicate, what will be the result of the next code block?
 
+var myElement = document.getElementById("myduplicate");
+
+- Ans: The first element with this id
+
+73. What will be the result of the execution of the next code block?
+
+var o = document.getElementsByTagName('a');
+- Ans: All the elements with tag a
+
+74. With the innerHTML property we can have access to the HTML code of an element.
+- Ans: Correct 
+
+75. With JavaScript we can access an element's CSS properties.
+- Ans: Correct
+
+76. If we use the document.write function after the page has been loaded, then the whole document is replaced with the new text
+- Ans: Correct 
+
+77. With which function can we open a new window?
+- Ans: window.open 
+
+78. Which line of code will return the second paragraph of the document?
+- Ans: document.getElementsByTagName("p")[1]
+
+79. Make sure when the user clicks the button mybutton the message Hello World is displayed.
+- Ans:
+```
+<div>
+    <input type="button" value="click me!" name="mybutton" onclick="alert('Hello World!');"/>
+</div>
+```
+
+80. Make sure when the user moves the mouse over the page's text box, the message This is a textbox is displayed.
+- Ans:
+```
+<input type="text" value="" id="mytext" onmouseover="alert('This is a textbox');"/>
+```
+
+81. Modify the function alterData so when it is called, it will set the content of the div element with id content to This is the new content
+- Ans:
+```
+function alertData(){
+    document.getElementById('content').innerHTML='This is the new content';
+}
+<p id="content" onclick="alertData();">I am a paragraph click to change it.</p>
+https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+```
+
+82. Modify the function myToggle so that when it is called, if the div element with id mymessage is visible on the page it should disappears and vice versa. Make sure that when the div element is not visible, it does not occupy any space on the page.
+- Ans:
+```
+function myToggle(){
+    if(document.getElementById("mymessage").style.display!=''){
+        document.getElementById("mymessage").style.display='';
+    }else{
+        document.getElementById('mymessage').style.display='none';
+    }
+}
+```
+
+83. Make sure when we click the page's link, the dialog box is displayed, but we should not be redirected to another page.
+- Ans: 
+```
+<a href="https://www.google.com/" class="link" onclick="alert('You Should stay here');return false">Google Link</a>
+
+```
+
+84. Make sure the function myLength is called everytime the content of the text field with id myname is changed. The function will set the content of the div element with id mysize, to the current length of the textbox value.
+- Ans:
+```
+function myLength(){
+    document.getElementById('mysize').innerHTML = document.getElementById('myname').value.length;
+}
+ <input type="text" class="textbox" value="" id="myname" onchange="myLength();" />
+                        <p id="mysize">0</p>
+```
+
+85. Make sure the function myColor is called everytime the text field with id myname is focused, and the function myRestore is called when it is unfocused. myColor function will set the background color of the field to black and the font color to white. myRestore function will set the background color of the field to white and the font color to black.
+- Ans:
+```
+function myColor(){
+    document.getElementById('myname').style.color = 'white';
+    document.getElementById('myname').style.backgroundColor = 'black';
+}
+
+function myRestore(){
+    document.getElementById('myname').style.color = 'black';
+    document.getElementById('myname').style.backgroundColor = 'white';
+}
+<input id="myname" type="text" value="This is focus test" onfocusin="myColor();" onfocusout="myRestore();" >
+<input id="myfocustest" type="text" value="This is focus test" onmouseover="myColor();" onmouseout="myRestore();" >
+```
+
+86. Make sure that when the user clicks the button with caption progress, the width of the div with id progvalue changes to 78% and the text of the div with id progpercent changes to 78%
+- Ans:
+```
+<div id="progressbar">
+    <div id="progvalue">
+        <div id="progpercent">61%
+        </div>
+    </div>
+</div>
+<input type="button" value="progress" class="button" onclick="myProgress();"/>
+
+function myProgress(){
+    document.getElementById('progvalue').style.width='78%';
+    document.getElementById('progpercent').innerHTML='78%';
+}
+```
+
+87. Create a function named myNumbers that will write at the position from which it was called, the following:
+1
+12
+123
+1234
+12345
+123456
+1234567
+12345678
+123456789
+- Ans:
+```
+function myNumbers(){
+    for( i=1; i<=9;i++){
+        for(k=1;k<=i;k++){
+            document.write(k);
+        }
+        document.write("<br/>");
+    }
+
+}
+
+<body>
+<script type="text/javascript">myNumbers();</script>
+</body>
+
+```
+
+88. Make sure when the user clicks the link new window the function myOpenNew is called. The function will open a new window and visit www.google.com. The name of the new window must be google
+- Ans:
+```
+function myOpenNew(){
+    window.open("https://www.google.com/","google");
+}
+<a href="javascript:void(0);" class="link" onclick="myOpenNew();">new window</a>
+<a href="#" class="link" onclick="myOpenNew();">new window</a>
+# scrolls you to the top of the page but javascript:void(0); does not.
+```
+
+89. Create a function named changeColor. In this function, create an array named myColors which will have the following elements:
+#aaaaaa
+#ff0000
+#00ff00
+#0000ff
+#ffff00
+Make sure that every time the page is reloaded, the background color will be set to a random color from this array.
+- Ans: 
+```
+function changeColor(){
+    var myColors = ['#aaaaaa',
+    '#ff0000',
+    '#00ff00',
+    '#0000ff',
+    '#ffff00'];
+    var myRand = Math.floor(Math.random()*100) %5;
+    document.body.style.background = myColors[myRand];
+}
+<body onload="changeColor();">
+</body>
+
+```
+
+90. In the function getBold, insert into the myArea array all the words that are written in bold. (each word will be in a different position of the array).
+- Ans: 
+```
+function getBold(){
+    var elements = document.getElementsByTagName('b');
+    var myArea = new Array(elements.length);
+    for(i=0; i<elements.length;i++){
+        myArea[i]=elements[i].innerText;
+        myArea.push(boldElements[i].innerText);
+    }
+}
+
+<p><b>This text is bold</b></p>
+<p><b>Word</b></p>
+```
+
+## Interact with HTML Forms
+
+91. What will happen when we execute the next code block?
+```
+var text = 'this is an example string!';
+text = text.replace('a', '_');
+```
+- Ans: The letter a will be replaced only once in the text with the underscore character.
+
+92. What will happen when we execute the next code block?
+```
+var text = 'this is an example string!';
+text = text.replace(/a/g, '_');
+```
+- Ans: All occurrences of the a will be replaced with the underscore character.
+```
+The following example uses the global flag (g) to replace all occurrences of the JS in the str by the JavaScript:
+let str = 'JS will, JS will rock you!';
+let newStr = str.replace(/JS/g,'JavaScript');
+console.log(newStr);
+```
+
+93. Which of the following functions must be applied on "Hello World!" in order to get the result "WORLD!"?
+- Ans: toUpperCase, substr, replace
+
+94. Every element supports the onSubmit event.
+- Ans: Incorrect 
+
+95. The following code block will have the same result on every browser.
+```
+alert('example'.substr(-1));
+```
+- Ans: Incorrect 
+
+96. With which event can we cancel the submission of a form?
+- Ans: onsubmit 
+
+97. With JavaScript we can submit a form without the use of a submit type button.
+- Ans: Correct 
+
+98. Which method of submitting a form is the least secure?
+- Ans: the get method because its field and values can be found in the resulting url.
+
+99. You have a form with id myForm. Which command should you use to get all the elements inside this form?
+- Ans: document.getElementById('myForm').elements
+
+100. The values of which element are not sent by a form
+- Ans: p, a 
+
+101. Which property of an input element must be set, in order for that element to be sent by a form?
+- Ans: name
+
+102. Which ways are valid to submit a form?
+- Ans: 
+```
+<input type="submit" value="submit" />
+<input type="image" src="button.gif" />
+```
+
+103. In a form, an option box has the type...
+- Ans: radio 
+
+104. Which properties are valid for the form element?
+- Ans: method, action 
+
+105. Which values can the method property of a form have?
+- Ans: get, post 
+
+106. The action property of a form defines...
+- Ans: The page to which the data of the form will be sent.
+
+107. A group of radio boxes must have...
+- Ans: the same name
+
+108. Insert a flow control condition so that if the value of data is greater than 10 characters long, the variable size is set to the value big, otherwise it is set to the value small
+- Ans: 
+```
+var data = 'this is not a small string';
+var size = null;
+if(data.length>10){
+    size='big';
+}else{
+    size='small';
+}
+```
+
+109. Convert the variable data to uppercase.
+- Ans: 
+```
+var data = 'Hello WORLD!';
+data = data.toUpperCase();
+```
+
+110. Convert the variable data to lowercase.
+- Ans: 
+```
+var data = 'Hello WORLD!';
+data = data.toLowerCase();
+```
+
+111. Replace the word easy with the word difficult in info.
+- Ans:
+```
+	var info = 'This is a very easy example';
+	info = info.replace('easy','difficult');
+```
+
+112. Replace the word search with the word replace in info. The replacement must be case-insensitive.
+- Ans:
+```
+	var info = 'cAsE InSeNsItIvE SeArCh';
+	info = info.replace(/search/i,'replace');
+```
+
+113. Make sure that the submission of the form is allowed only after the myValidate function is called and it returns true.
+- Ans:
+```
+html:
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=7" />
+		
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script src="exam.js" type="text/javascript"></script>
+		
+		<title>INFOlearn HTML</title>
+	</head>
+	
+	<body>
+		
+		<div id="logo" class="centered width-950"></div>
+		<div id="header"><div class="wave centered width-950"></div></div>
+		<div id="content" class="centered width-950">
+			
+			<form action="" method="get" name="myform" id="myform" onsubmit="return myValidate();">
+				<p>e-mail</p>
+				<input type="text" id="email" class="textbox" />
+				<input type="submit" value="submit" id="mysubmit" class="button" />
+			</form>
+			
+		</div>
+		
+	</body>
+</html>
+exam.js:
+	/* DATA */
+	function myValidate()
+	{
+		return (document.getElementById('email').value.length > 0);
+	}
+```
+
+114. Modify the function myValidate so that it allows the submission of the form only if the field with id email is not empty.
+- Ans: 
+```
+ function myValidate(){
+        if(document.getElementById('email').value.length > 0){
+            return true;
+        }
+
+        return false;       
+    }
+```
+
+115. Make sure that when the user clicks the button send data, the form is submitted, The type of the button must remain as button
+- Ans:
+```
+<form action="" method="get" name="myform" id="myform">
+				<p>e-mail</p>
+				<input type="text" id="email" class="textbox" />
+				<br />
+				<input type="button" value="send data" class="button" id="mybutton" onclick="document.getElementById('myform').submit();" />
+			</form>
+```
+
+116. Make sure that the form is submitted when the users clicks the link send data.
+- Ans:
+```
+	<form action="" method="get" name="myform" id="myform">
+				<p>e-mail</p>
+				<input type="text" id="email" class="textbox" />
+				<br />
+				<a href="" class="link" id="mylink" onclick="document.getElementById('myform').submit();">send data</a>
+			</form>
+```
+
+117. Create a function named myAdd. This function will be called when the user clicks the button calc, it will sum the integer values of the input fields with id number1 and number2 and will display the result in field with id myresult
+- Ans:
+```
+<input type="button" value="calc" class="button" onclick="myAdd();" />
+
+	function myAdd(){
+		var num1 = parseInt(document.getElementById('number1').value);
+		var num2 = parseInt(document.getElementById('number2').value);
+		document.getElementById('myresult').value= num1+num2;
+	}
+```
+
+118. Make sure that the submission page of the form, opens in a new window.
+- Ans:
+```
+<form name="myform" target="_blank">
+				<div id="ponline1">
+					
+					<select name="tests">
+						<option value="css">CSS</option>
+						<option value="html">HTML</option>
+						<option value="js">JavaScript</option>
+						<option value="php">PHP</option>
+						<option value="mysql">MySQL</option>
+					</select>
+					
+					<div id="pbutton1">
+						<input type="submit" name="mysubmit" value="submit" />
+					</div>
+					
+				</div>
+			</form>
+```
+
+119. Make sure that the data of the form are sent to the page test.php with the POST method
+- Ans:
+```
+<form name="myform" method="POST" action="test.php">
+				<div id="ponline1">
+					
+					<select name="tests">
+						<option value="css">CSS</option>
+						<option value="html">HTML</option>
+						<option value="js">JavaScript</option>
+						<option value="php">PHP</option>
+						<option value="mysql">MySQL</option>
+					</select>
+					
+					<div id="pbutton1">
+						<input type="submit" name="mysubmit" value="submit" />
+					</div>
+					
+				</div>
+			</form>
+```
+
+120. Make sure that form of the document sends its data to the page test.php, with one extra parameter named submit with the value true. The extra parameter should be sent using the GET method.
+- Ans:
+```
+<form name="myform" method="POST" action="test.php?submit=true">
+				<div id="ponline1">
+					
+					<select name="tests">
+						<option value="css">CSS</option>
+						<option value="html">HTML</option>
+						<option value="js">JavaScript</option>
+						<option value="php">PHP</option>
+						<option value="mysql">MySQL</option>
+					</select>
+					
+					<div id="pbutton1">
+						<input type="submit" name="mysubmit" value="submit" />
+					</div>
+					
+				</div>
+			</form>
+```
