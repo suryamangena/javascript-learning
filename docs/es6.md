@@ -199,3 +199,89 @@ let gemstone = {
 ```
 
 ## Iteration 
+
+## For Each loop
+NOTE: The forEach loop is another type of for loop in JavaScript. However, forEach() is actually an array method, so it can only be used exclusively with arrays. There is also no way to stop or break a forEach loop. If you need that type of behavior in your loop, you’ll have to use a basic for loop.
+
+## For in Loop 
+Also, the for...in loop can get you into big trouble when you need to add an extra method to an array (or another object). Because for...in loops loop over all enumerable properties, this means if you add any additional properties to the array's prototype, then those properties will also appear in the loop.
+```
+Array.prototype.decimalfy = function() {
+  for (let i = 0; i < this.length; i++) {
+    this[i] = this[i].toFixed(2);
+  }
+};
+
+const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (const index in digits) {
+  console.log(digits[index]);
+}
+
+## Output:
+
+Prints:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+function() {
+ for (let i = 0; i < this.length; i++) {
+  this[i] = this[i].toFixed(2);
+ }
+}
+```
+
+Gross! This is why for...in loops are discouraged when looping over arrays.
+
+
+## For of Loop 
+TIP: It’s good practice to use plural names for objects that are collections of values. That way, when you loop over the collection, you can use the singular version of the name when referencing individual values in the collection. For example, for (const button of buttons) {...}.
+
+You can stop or break a for...of loop at anytime.
+
+## Spread Operator
+The spread operator, written with three consecutive dots ( ... ), is new in ES6 and gives you the ability to expand, or spread, iterable objects into multiple elements.
+
+## Rest Parameter
+The rest parameter, also written with three consecutive dots ( ... ), allows you to represent an indefinite number of elements as an array. This can be helpful in a couple of different situations.
+```
+One situation is when assigning the values of an array to variables. For example,
+
+const order = [20.17, 18.67, 1.50, "cheese", "eggs", "milk", "bread"];
+const [total, subtotal, tax, ...items] = order;
+console.log(total, subtotal, tax, items);
+```
+
+## Variadic functions
+Another use case for the rest parameter is when you’re working with variadic functions. Variadic functions are functions that take an indefinite number of arguments.
+
+For example, let’s say we have a function called sum() which calculates the sum of an indefinite amount of numbers. How might the sum() function be called during execution?
+```
+sum(1, 2);
+sum(10, 36, 7, 84, 90, 110);
+sum(-23, 3000, 575000);
+```
+
+## Using the rest parameter
+Fortunately, with the addition of the rest parameter, you can rewrite the sum() function to read more clearly.
+
+function sum(...nums) {
+  let total = 0;  
+  for(const num of nums) {
+    total += num;
+  }
+  return total;
+}
+This version of the sum() function is both more concise and is easier to read. Remember, we use the for...of loop to loop over any type of data that is iterable. So we'll use for...of here rather than for...in.
+
+
+
+
+
