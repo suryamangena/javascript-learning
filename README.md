@@ -30,7 +30,7 @@
             var foo = "Foo";
             console.log(foo); // Foo
         }
-        2) Var is function scoped 
+        2) Var is function scoped
 
     b) Let:
      1) let variables are not initialized until their definition is evaluated.  Accessing them before the initialization results in a Uncaught ReferenceError. Variable said to be in "temporal dead zone" from the start of the block until the initialization is processed.
@@ -40,6 +40,12 @@
             console.log(foo); // Foo
         }
      2) let is block scoped
+
+## Rules for using let and const
+let and const also have some other interesting properties.
+
+Variables declared with let can be reassigned, but can’t be redeclared in the same scope.
+Variables declared with const must be assigned an initial value, but can’t be redeclared in the same scope, and can’t be reassigned
 
 ## [JavaScript Types & Operators](./docs/typesoperators.md)
 
@@ -82,7 +88,7 @@
 
 ## [JavaScript Certification Questions](./docs/mta98-382-exam-questions.md)
 
-
+## [ES6](./docs/es6.md)
 
 
 

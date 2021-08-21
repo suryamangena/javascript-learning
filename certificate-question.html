@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <form id="credentials" action="#" method="GET"> 
+            <p>Username: <input type="text" id="username"/></p>
+            <input type="button" onclick="getUsername()" value="Submit">
+        </form>
+        <p id="para"><br></p>
+        <script>
+            function getUsername(){
+                var username = document.firstChild.value;
+                alert('Welcome'+ username);
+            }
+        </script>
+    </body>
+</html>
+
+
