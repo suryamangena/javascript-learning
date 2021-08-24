@@ -677,5 +677,9 @@ class GrannySmith extends Apple {
 }
 ```
 
+## [JavaScript BuiltIns](./es6-builtins.md)
+1) Sets
+2) Maps
+3) Promises
 
 
