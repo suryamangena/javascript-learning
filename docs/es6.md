@@ -682,4 +682,6 @@ class GrannySmith extends Apple {
 2) Maps
 3) Promises
 
+## [Old and new browsers](./es6-old-new-browsers-support.md)
+
 
