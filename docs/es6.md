@@ -431,6 +431,31 @@ console.log(dessert.scoops);
 O/P: 1
 ```
 
+## Arrow Functions Code Conventions
+```
+const shelf1 = [{name: 'name1', shelf: 'a'},{name: 'name2', shelf: 'a'}];
+const shelf2 = [{name: 'name3', shelf: 'b'},{name: 'name4', shelf: 'b'}];
+const allBooks = [...shelf1, ...shelf2];
+
+const filterBy = (books,shelf) => books.filter(b => {
+  return b.shelf === shelf;
+});
+
+
+const booksOnShelf = filterBy(allBooks,'b');
+```
+```
+const shelf1 = [{name: 'name1', shelf: 'a'},{name: 'name2', shelf: 'a'}];
+const shelf2 = [{name: 'name3', shelf: 'b'},{name: 'name4', shelf: 'b'}];
+const allBooks = [...shelf1, ...shelf2];
+
+const filter = books => shelf => books.filter(b => {
+  return b.shelf === shelf;
+});
+
+const filterBy = filter(allBooks);
+const booksOnShelf = filterBy('b');
+```
 ## Default Function Parameters
 ### Standard  Way
 ```
